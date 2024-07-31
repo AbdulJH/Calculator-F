@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.container button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(202, 202, 202, 0.75);
+}
+
+.container button:hover {
+  background-color: rgba(255, 255, 255, 0.979);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(206, 211, 255, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(73, 14, 14, 0.849);
+  font-size: 1.5rem;
+  background-color: rgba(206, 211, 255, 0.75);
+}
+
+.output .current-operand {
+  background-color: rgba(206, 211, 255, 0.75);
+  color: rgba(255, 149, 10, 0.849);
+  font-size: 2rem;
+}
+
+.container .clear-ce {
+  background-color: rgb(255, 83, 83);
+}
+
+.container .clear-c {
+  background-color: rgb(255, 83, 83);
+}
